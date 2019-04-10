@@ -1,0 +1,82 @@
+.App {
+  font-family: sans-serif;
+  border-radius: 30px;
+  background-color: black;
+  width: 100%;
+}
+
+h1 {
+  background-color: orange;
+  padding: 1.2rem;
+  color: white;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.header {
+  margin: 0 6rem;
+  text-align: center;
+}
+
+.fa-chevron-left {
+  text-align: left;
+}
+
+.fa-power-off {
+  text-align: right;
+}
+
+.freq {
+  text-align: right;
+  font-weight: 700;
+}
+
+.line {
+  margin: 1rem 1rem;
+  border-bottom: 1px solid grey;
+  color: grey;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+img {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  margin: 1rem 3rem;
+}
+
+.fa-minus-circle,
+.fa-plus-circle {
+  font-size: 2rem;
+  vertical-align: 50%;
+}
+
+.bottom {
+  height: 3rem;
+  text-align: center;
+  color: orange;
+  padding-bottom: 1rem;
+}
+
+.current {
+  color: orange;
+  font-size: 1rem;
+}
+
+.name_bottom {
+  margin-bottom: 1rem;
+  color: grey;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
