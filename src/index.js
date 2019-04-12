@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 
 import "./styles.scss";
+import { updateFunctionDeclaration } from "typescript";
 
 const App = props => {
   const [radios, setRadios] = useState([]);
@@ -15,21 +16,21 @@ const App = props => {
       });
   }, []);
 
-  console.log(active);
+  console.log("active", active);
 
   return (
     <div className="App">
       <h1 className="d-flex justify-content-between">
         <i className="fas fa-chevron-left" />
         <span className="header">STATIONS</span>
-        <i className="fas fa-power-off" />
+        <i className="fas fa-power-off" onClick={e => setActive(false)} />
       </h1>
       {radios.map((radio, index) => (
-        <div className="grey">
-          <div className="line" onClick={e => setActive(index)}>
+        <div className="grey" key={index}>
+          <div className="line" onClick={e => setActive(radio.name)}>
             <div
               className={`d-flex justify-content-around center ${
-                index !== active ? "hidden" : ""
+                radio.name !== active ? "active && hidden" : ""
               }`}
             >
               <i className="fas fa-minus-circle" />
@@ -44,8 +45,10 @@ const App = props => {
         </div>
       ))}
       <div className="bottom">
-        <p className="current">CURRENTLY PLAYING</p>
-        <p className="name_bottom">{active && radios[active].name}</p>
+        <p className={`current ${active === false ? "active && hidden" : ""}`}>
+          CURRENTLY PLAYING
+        </p>
+        <p className="name_bottom">{active}</p>
       </div>
     </div>
   );
