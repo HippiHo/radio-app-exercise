@@ -45,7 +45,7 @@ const App = props => {
         </div>
       ))}
       <div className="bottom">
-        <p className={`current ${active === false ? "active && hidden" : ""}`}>
+        <p className={`current ${active === false ? "hidden" : ""}`}>
           CURRENTLY PLAYING
         </p>
         <p className="name_bottom">{active}</p>
