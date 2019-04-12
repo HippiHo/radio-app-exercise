@@ -2,75 +2,80 @@
   font-family: sans-serif;
   border-radius: 30px;
   background-color: black;
-  width: 100%;
+  width: 400px;
+
+  h1 {
+    background-color: orange;
+    padding: 1.2rem;
+    color: white;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+
+    .fa-chevron-left {
+      text-align: left;
+    }
+
+    .fa-power-off {
+      text-align: right;
+    }
+  }
+
+  .line {
+    margin: 0 1rem;
+    border-bottom: 1px solid #b9b9b9;
+    color: #b9b9b9;
+    font-size: 1.3rem;
+
+    .radio {
+      padding: 1rem 0;
+
+      .freq {
+        font-weight: 700;
+      }
+    }
+
+    img {
+      width: 40%;
+      height: 40%;
+      border-radius: 50%;
+      border: 2px solid #b9b9b9;
+      margin: 1rem 3rem;
+    }
+
+    .fa-minus-circle,
+    .fa-plus-circle {
+      font-size: 2rem;
+    }
+  }
+
+  .bottom {
+    height: 3rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-radius: 30px;
+
+    .current {
+      color: orange;
+      font-size: 1rem;
+    }
+
+    .name_bottom {
+      margin-bottom: 1rem;
+      color: grey;
+    }
+  }
 }
 
-h1 {
-  background-color: orange;
-  padding: 1.2rem;
-  color: white;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-}
-
-.header {
-  margin: 0 6rem;
-  text-align: center;
-}
-
-.fa-chevron-left {
-  text-align: left;
-}
-
-.fa-power-off {
-  text-align: right;
-}
-
-.freq {
-  text-align: right;
-  font-weight: 700;
-}
-
-.line {
-  margin: 1rem 1rem;
-  border-bottom: 1px solid grey;
-  color: grey;
-  padding-bottom: 1rem;
-  font-size: 1.3rem;
-}
-
-img {
-  width: 30%;
-  height: 30%;
-  border-radius: 50%;
-  margin: 1rem 3rem;
-}
-
-.fa-minus-circle,
-.fa-plus-circle {
-  font-size: 2rem;
-  vertical-align: 50%;
-}
-
-.bottom {
-  height: 3rem;
-  text-align: center;
-  color: orange;
-  padding-bottom: 1rem;
-}
-
-.current {
-  color: orange;
-  font-size: 1rem;
-}
-
-.name_bottom {
-  margin-bottom: 1rem;
-  color: grey;
+.justify-content-around {
+  justify-content: space-around;
 }
 
 .justify-content-between {
   justify-content: space-between;
+}
+
+.center {
+  align-items: center;
 }
 
 .d-flex {
@@ -79,4 +84,8 @@ img {
 
 .hidden {
   display: none;
+}
+
+.grey {
+  background-color: #252424;
 }

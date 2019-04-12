@@ -25,10 +25,10 @@ const App = props => {
         <i className="fas fa-power-off" />
       </h1>
       {radios.map((radio, index) => (
-        <div>
+        <div className="grey">
           <div className="line" onClick={e => setActive(index)}>
             <div
-              className={`d-flex justify-content-between ${
+              className={`d-flex justify-content-around center ${
                 index !== active ? "hidden" : ""
               }`}
             >
@@ -36,10 +36,10 @@ const App = props => {
               <img src={radio.image} />
               <i className="fas fa-plus-circle" />
             </div>
-            <p className="d-flex justify-content-between ">
+            <div className="d-flex justify-content-between grey radio">
               <span className="name">{radio.name}</span>
               <span className="freq">{radio.frequency}</span>
-            </p>
+            </div>
           </div>
         </div>
       ))}
